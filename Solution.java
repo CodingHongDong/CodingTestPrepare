@@ -2,18 +2,11 @@ package codingtest;
 
 class Solution {
     
-	public int solution(int price) {
-        int answer = 0;
+	public String solution(String my_string, String letter) {
+        String answer = my_string.toString();
         
-        if(price >= 500000) {
-        	answer =  (int) ((int) price - (price * 0.05));
-        	
-        } else if(price >= 300000) {
-        	answer = (int) ((int) price - (price * 0.1));
-        } else if(price >= 100000) {
-        	answer = (int) ((int) price - (price * 0.2));
-        } else {
-        	answer = price;
+        if(answer.indexOf(letter) != -1) {
+        	answer = my_string.replace(letter, "");
         }
         
         return answer;
