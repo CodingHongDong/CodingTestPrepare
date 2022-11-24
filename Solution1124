@@ -1,0 +1,14 @@
+package codingtest;
+
+import java.util.Arrays;
+
+class Solution {
+    
+	public int[] solution(int[] numbers, int num1, int num2) {
+        // numbers : 원본 배열, num1 : 시작 위치, num2 : 마지막 위치
+		int[] answer = Arrays.copyOfRange(numbers, num1, num2+1); 
+        
+        return answer;
+    }
+	
+}
